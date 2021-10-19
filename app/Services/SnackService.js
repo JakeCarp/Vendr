@@ -6,13 +6,13 @@ class SnackService {
         let total = ProxyState.transactionTotal
         if (target.qty > 0 && target.price <= total) {
             target.qty--
-            total -= target.price
+            ProxyState.transactionTotal -= target.price
             ProxyState.snacks = ProxyState.snacks
-            return
         } else if (target.price > total) {
-            return window.alert('you can\'t afford this item')
+            window.alert('you can\'t afford this item')
+        } else {
+            window.alert('This item is unavailable')
         }
-        return window.alert('This item is unavailable')
     }
     addMoney(num) {
         ProxyState.transactionTotal += num

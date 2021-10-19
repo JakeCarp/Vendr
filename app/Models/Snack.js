@@ -7,7 +7,11 @@ export class Snack {
         this.price = price
         this.qty = qty
         this.id = id
-        this.cardTemplate = `
+
+    }
+
+    get cardTemplate() {
+        return `
         <div class="card text-center">
          <div class="card-body">
             <h4 class="card-title">${this.name} - $${this.price}</h4>

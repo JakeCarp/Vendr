@@ -4,6 +4,7 @@ import { snackService } from "../Services/SnackService.js";
 
 //private
 function _drawSnacks() {
+    console.log('hitting snack draw', ProxyState.snacks)
     let snacks = ProxyState.snacks
     let template = ``
     snacks.forEach(s => {
