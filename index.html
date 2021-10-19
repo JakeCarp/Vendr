@@ -18,8 +18,7 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
+        <img src="./assets/img/1471917-middle.png" height="45" alt="" loading="lazy">
         <span class="ms-2">Vendr</span>
       </a>
     </nav>
@@ -28,7 +27,14 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <div id="app"></div>
+          <div>
+            <button onclick="app.snackController.addMoney(.25)" class="btn btn-primary">Add Quarter</button>
+            <h5>Total: $<span id="total">0.00</span></h5>
+          </div>
+          <div id="machine">
+
+
+          </div>
         </div>
       </div>
     </div>

@@ -1,8 +1,14 @@
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
+import { Snack } from "./Models/Snack.js"
 
 class AppState extends EventEmitter {
-  snacks = []
+  snacks = [
+    new Snack('Dorimtos', 1.00, 10, 1)
+
+
+  ]
+  transactionTotal = 0
 
 }
 
