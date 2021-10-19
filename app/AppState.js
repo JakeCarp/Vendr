@@ -4,7 +4,10 @@ import { Snack } from "./Models/Snack.js"
 
 class AppState extends EventEmitter {
   snacks = [
-    new Snack('Dorimtos', 1.00, 10, 1)
+    new Snack('Dorimtos', 1.00, 10, 1, './assets/img/download.jfif'),
+    new Snack('Chimpken Numgies', 5.00, 10, 2, './assets/img/chicken.png'),
+    new Snack('Moumten Dew', 1.50, 10, 3, './assets/img/1471917-middle.png'),
+    new Snack('Dr. Pempter', 1.50, 10, 4, './assets/img/dr.jfif')
 
 
   ]
